@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/my_home"
+        android:icon="@drawable/ic__dashboard_24"
+        android:title="Dashboard"/>
+    <group android:checkableBehavior="single">
+
+        <item android:title="Account">
+            <menu>
+
+
+
+
+                <item android:id="@+id/account"
+                    android:icon="@drawable/ic_person"
+                    android:title="My Profile"/>
+
+
+
+                <item android:id="@+id/settings"
+                    android:icon="@drawable/ic_settings_24"
+                    android:title="Settings"/>
+
+
+
+
+
+            </menu>
+
+        </item>
+
+    </group>
+
+
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <item android:id="@+id/share"
+                android:icon="@drawable/ic_share"
+                android:title="Share"/>
+
+            <item android:id="@+id/refer"
+                android:icon="@drawable/ic_send"
+                android:title="Refer a friend"/>
+        </menu>
+
+    </item>
+
+    <item android:title="Log out" >
+
+        <menu>
+            <item android:id="@+id/logOut"
+                android:icon="@drawable/ic_logout"
+                android:iconTint="@color/red"
+                android:title="Log out"/>
+
+        </menu>
+
+
+
+    </item>
+</menu>

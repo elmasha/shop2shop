@@ -17,7 +17,7 @@
 
         <ImageView
             android:layout_width="250dp"
-            android:src="@drawable/deliver"
+            android:src="@drawable/delis"
             android:layout_margin="20dp"
             android:layout_gravity="center"
             android:layout_height="290dp"/>

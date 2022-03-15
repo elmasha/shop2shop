@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content">
 
 
@@ -17,7 +17,7 @@
 
         <ImageView
             android:layout_width="250dp"
-            android:src="@drawable/scooter"
+            android:src="@drawable/deliver"
             android:layout_margin="20dp"
             android:layout_gravity="center"
             android:layout_height="290dp"/>
@@ -69,11 +69,11 @@
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:layout_margin="10dp"
-                        android:background="@drawable/btn_round_primary"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/btn_round_primary2"
                         android:text="Log in"
                         android:textAllCaps="false"
-                        android:textColor="@color/white"
+                        android:textColor="@color/secondary"
                         android:textSize="18dp"
                         android:textStyle="bold" />
 
@@ -85,6 +85,7 @@
                         android:layout_margin="10dp"
                         android:background="@drawable/btn_round_primary2"
                         android:text="Register"
+                        android:visibility="gone"
                         android:textAllCaps="false"
                         android:textColor="@color/secondary"
                         android:textSize="18dp"
