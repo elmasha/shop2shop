@@ -47,6 +47,7 @@
             android:layout_height="wrap_content">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/new_Order"
                 android:layout_width="140dp"
                 app:cardCornerRadius="12dp"
                 android:layout_margin="8dp"

@@ -21,6 +21,9 @@ public class RidersOrder {
     @SerializedName("OrderNumber")
     private String OrderNumber;
 
+    public RidersOrder(String id, String name, String name1, String s, String s1, String firstName, String lastName, String orderNumber) {
+    }
+
     public String getID() {
         return ID;
     }

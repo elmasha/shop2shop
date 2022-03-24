@@ -15,8 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.shop.shop2shop.Models.RidersOrder;
 import com.shop.shop2shop.R;
 
-import org.json.JSONObject;
-
 import java.util.List;
 
 public class OrdersAdapter  extends RecyclerView.Adapter<OrdersAdapter.ViewHolder> {
@@ -44,6 +42,12 @@ public class OrdersAdapter  extends RecyclerView.Adapter<OrdersAdapter.ViewHolde
         final RidersOrder articleModel = ridersOrderArrayList.get(position);
         if(!TextUtils.isEmpty(articleModel.getName())) {
             holder.titleText.setText(articleModel.getName());
+            // holder.date.setText(articleModel.get);
+            holder.order_number.setText(articleModel.getOrderNumber());
+            holder.pickup_point.setText(articleModel.getContact_PersonName_FirstName());
+
+
+
         }
 
     }
@@ -54,22 +58,17 @@ public class OrdersAdapter  extends RecyclerView.Adapter<OrdersAdapter.ViewHolde
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView titleText,date;
+        private TextView titleText,date,order_number,pickup_point;
         private ImageView article_image;
         private TextView descriptionText;
         private LinearLayout artilceAdapterParentLinear;
         public ViewHolder(@NonNull View view) {
             super(view);
-            titleText = view.findViewById(R.id.row_text);
+//            titleText = view.findViewById(R.id.row_text);
+//            date =  view.findViewById(R.id.date);
+//            order_number =  view.findViewById(R.id.order_number);
+//            pickup_point =  view.findViewById(R.id.pickup_point);
 
-            artilceAdapterParentLinear.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-//                    if (onRecyclerViewItemClickListener != null) {
-//                        onRecyclerViewItemClickListener.onRecyclerViewItemClicked(getAdapterPosition(), view);
-//                    }
-                }
-            });
 
         }
     }
